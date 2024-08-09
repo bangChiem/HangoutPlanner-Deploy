@@ -1,8 +1,5 @@
-# React + Vite
+Welcome to my side project on practicing React web dev. This app can be used to help you plan hangouts amongst large or small groups. Thank you for checking out my website <3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+If you want to see the development process of the app please find my other repository HangoutPlanner-dev
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I user React + Vite for setup
