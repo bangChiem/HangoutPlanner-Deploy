@@ -1,0 +1,49 @@
+.stack-column{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.stack-header{
+    font-size: 5rem;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    border-bottom: solid 1px rgb(181, 181, 181);
+}
+
+.stack-instruction{
+    padding-right: 10px;  /* help adjust center of text due to text align left of cards */
+    font-family: "Zilla Slab", serif;
+    font-style: italic;
+}
+
+.top-preferred{
+    padding-top: 10px;
+    margin: 0;
+}
+
+.activities-open{
+    border-radius: 20px;
+    border: 3px solid #D9D9D9;
+    margin: 0 auto 15px auto;
+    max-height: 700px;
+    height: 700px;
+}
+
+.bot-preferred{
+    padding-bottom: 20px;
+}
+
+.close-icon{
+    margin-top: 20px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.close-icon:hover{
+    rotate: 90;
+    transform: scale(1.3);
+}

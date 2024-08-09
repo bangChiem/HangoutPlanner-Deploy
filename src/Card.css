@@ -1,0 +1,70 @@
+article{
+    display: flex;
+    align-items: center;
+}
+
+.activity{
+    border: solid 1px gainsboro;
+    color: white;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    height: 30px;
+    font-weight: 700;
+    min-width: 200px;
+    margin: 0;
+    border-radius: 0 15px 15px 0;
+    cursor: grab;
+    transition: ease .2s;
+    border: none;
+}
+
+p{
+    padding-left: 15px;
+}
+
+article img:hover +.activity{
+    background-color: gray;
+}
+
+.activity:hover{
+    background-color: gray;
+}
+
+.activity:active{
+    border: solid 1px black;
+}
+
+.one{
+    background-color: #9DE24F;
+}
+
+.two{
+    background-color: #9cd262;
+}
+
+
+.three{
+    background-color: #C5E763;
+}
+
+.four{
+    background-color: #bfe491;
+}
+
+.five{
+    background-color: #bbd79a;
+    
+}
+
+.six{
+    background-color: #FFE700;
+}
+
+.seven{
+    background-color: #FFBF19;
+}
+
+.eight{
+    background-color: #FF595E;
+}

@@ -1,0 +1,61 @@
+.time-open{
+    border-radius: 20px;
+    border: 3px solid #D9D9D9;
+    margin: 0 auto 15px auto;
+    max-height: 450px;
+    height: 450px;  
+    font-family: 'Open Sans','sans-serif';
+}
+
+.time-label{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    padding: 20px;
+    width: 80%;
+    margin: 5% auto 1% auto;
+    padding: 2% 7% 2% 7%;
+    border-radius: 0 0 1.5vw 1.5vw;
+    background-color: #4BD7EA;
+}
+
+.time-select-container{
+    margin: auto;
+    width: 80%;
+}
+
+.time-select-left-label{
+    font-size: 2.5rem;
+    font-weight: 800;
+    background-color: #3E4CC9;
+    color: white;
+    padding: 5px 20px 5px 30px;
+    border-radius: 20px 0 0 20px;
+    margin-right: 5px;
+}
+
+.time-select-right-label{
+    font-size: 2.5rem;
+    font-weight: 800;
+    background-color: #FFD809;
+    color: white;
+    padding: 5px 30px 5px 20px;
+    border-radius: 0 20px 20px 0;
+}
+
+.time-select-label-container{
+    margin-bottom: 10px;
+}
+
+.time-open input{
+    width: 35%;
+    margin-right: 5px;
+}
+
+
+/* MOBILE */
+@media only screen and (max-width: 400px) {
+    .time-label{
+        border-radius: 0 0 8vw 8vw;
+    }
+}

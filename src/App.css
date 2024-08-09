@@ -1,0 +1,134 @@
+.hangout-results{
+    border: solid black 1px;
+    padding: 100px;
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    border-left: 0.2vw solid rgb(250, 250, 250);
+    border-right: 0.2vw solid rgb(250, 250, 250);
+    min-height: 1024px;
+    margin: auto;
+}
+
+.topbar{
+    padding-bottom: 1%;
+}
+
+.top-left{
+    margin-left: 2%;
+}
+
+.center-items{
+    display: flex;
+    justify-content: center;
+}
+
+.toolbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(155, 155, 155);
+    height: 60px;
+    width: 90%;
+    margin: 15px;
+    border-radius: 50px;
+}
+
+.instructions-panel{
+    display: flex;
+    justify-content: center;
+}
+
+.tool-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    padding: 5px 10px 5px 10px;
+    font-weight: 500;
+    color: black;
+    border-radius: 30px;
+    transition: transform 0.2s;
+}
+
+.tool-button:hover{
+    background-color: rgb(231, 231, 231);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.toolbar img{
+    height: 30px;
+    padding-right: 10px;
+}
+
+.hangouts-title{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 4rem;
+    padding: 10px 20px 20px 20px;
+    font-weight: 800;
+    background-color: #FFBF19;
+    border-radius: 0 0 40px 40px;
+}
+
+.hangouts-subtitle{
+    white-space: nowrap;
+    font-weight: 100;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.test{
+    border: 1px black dashed;
+}
+
+.panel-container{
+    text-align: center;
+}
+
+.calendar-open{
+    border-radius: 20px;
+    border: 3px solid #D9D9D9;
+    margin: 0 auto 15px auto;
+    max-height: 280px;
+    height: 280px;  
+}
+
+.calendar-panel-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+.rdp-root {
+    --rdp-accent-color: red; 
+    --rdp-accent-background-color: #f0f0f0; /* Change the accent background color. */
+  }
+
+/* MOBILE */
+@media only screen and (max-width: 767px) {
+    .tool-button{
+        font-size: 1rem;
+    }
+    
+    .desktop{
+        display: none;
+    }
+}
+
+/* DESKTOP  */
+@media only screen and (min-width: 768px) {
+    .mobile{
+        display: none;
+    }
+
+}
