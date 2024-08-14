@@ -25,7 +25,7 @@ function TimePanel( {timePanelIsOpen, toggleTimePanel, setDuration, setTime, tim
 
     return(
         <div className={`${timePanelIsOpen ? 'panel time-open' : 'panel'}`}>
-            <img className="close-icon" src="/src/assets/close.png" height={25} onClick={toggleTimePanel}></img>
+            <img className="close-icon" src="src/assets/close.png" height={25} onClick={toggleTimePanel}></img>
 
             <div className='time-label'>How Long?</div>
             <form>

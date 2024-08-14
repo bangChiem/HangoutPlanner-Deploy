@@ -31,7 +31,7 @@ function App() {
           <div className="toolbar row mx-auto">
             <div className="col-sm-6">
               <div onClick={handleNewPanel} className="tool-button">
-                  <img src="src/assets/plus.png"></img>Add Panel
+                  <img src="./assets/plus.png"></img>Add Panel
                 </div>
             </div>
             <div className="col-sm-6">
@@ -44,8 +44,8 @@ function App() {
       </div>
 
       <div className={`instructions-panel ${showInstructions ? '' : 'hide'}`}>
-        <img className="mobile" width={328} src="/src/assets/startInstructions.png"></img>
-        <img className="desktop" width={800} src="/src/assets/desktopStartInstruction.png"></img>
+        <img className="mobile" width={328} src="src/assets/startInstructions.png" alt="instructions"></img>
+        <img className="desktop" width={800} src="src/assets/desktopStartInstruction.png" alt="instructions"></img>
       </div>
 
 

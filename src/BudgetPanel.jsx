@@ -20,7 +20,7 @@ function BudgetPanel( {setBudgetPanelIsOpen, budgetPanelIsOpen, setMaxBudget, se
     
     return(
         <div className={`budget-panel ${budgetPanelIsOpen ? "panel budget-open": "panel"}`}>
-            <img className="close-icon" src="/src/assets/close.png" height={25} onClick={toggleBudgetPanel}></img>
+            <img className="close-icon" src="src/assets/close.png" height={25} onClick={toggleBudgetPanel}></img>
             <form>
                 
                 <div className='min-budget-label'>Minimum Budget</div>

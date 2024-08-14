@@ -12,7 +12,7 @@ function Stack( {activityRanksIsOpen, setActivityRanksIsOpen, list, setActiveCar
     
     return (
         <div className={`stack-column ${activityRanksIsOpen ? 'activities-open panel' : 'panel'}`}>
-            <img className="close-icon" src="/src/assets/close.png" height={25} onClick={togglePanel}></img>
+            <img className="close-icon" src="src/assets/close.png" height={25} onClick={togglePanel}></img>
             <p className='top-preferred stack-instruction'>Most Preferred</p>
             <DropArea onDrop={() => onDrop(0)}/>
             {list.map(
