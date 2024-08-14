@@ -36,7 +36,7 @@ function Card( {index, val, setActiveCard} ){
             onDragStart={() => setActiveCard(index)} 
             onDragEnd={() => setActiveCard()}
         >
-                <img src='src/assets/drag.png' width={40}></img>
+                <img src='./assets/drag.png' width={40}></img>
                 <p className={`activity ${setColor(index)}`} >{val}</p>
         </article>
     )

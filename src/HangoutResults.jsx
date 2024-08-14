@@ -117,7 +117,7 @@ function HangoutResults( {enoughData, data, open, onClose} ){
       {/* ERROR DISPLAY WHEN NOT ENOUGH PANELS HAVE BEEN SUBMITTED */}
       <div className={`${handleIfDataHasBeenSubmitted() ? "hide" : ''} hangout-results-container`}>
         <div className="exit-button-container">
-              <img onClick={onClose} src="src/assets/close.png" className="exit-button"></img>
+              <img onClick={onClose} src="./assets/close.png" className="exit-button"></img>
             </div>
 
             <div className={`${handleIfDataHasBeenSubmitted() ? "hide" : ''} not-enough-data-container`} >
@@ -125,12 +125,12 @@ function HangoutResults( {enoughData, data, open, onClose} ){
                 <h1>NOT ENOUGH DATA</h1>
               </div>
               <h2 className="not-enough-data-msg">*You have to submit at least 2 panels to find a hangout</h2>
-              <img width={200}src="src/assets/not-enough-data-img.png"></img>
+              <img width={200}src="./assets/not-enough-data-img.png"></img>
             </div>
       </div>
           <div className={` ${handleIfDataHasBeenSubmitted() ? "" : 'hide'} hangout-results-container`}>
           <div className="exit-button-container">
-              <img onClick={onClose} src="src/assets/close.png" className="exit-button"></img>
+              <img onClick={onClose} src="./assets/close.png" className="exit-button"></img>
             </div>
               <div className="results-header-title-container valid-data">
                 <h1>Best</h1>

@@ -134,25 +134,25 @@ function MainPanel( {index, setPanelData} ){
                 </form>
 
                 <div className={`panel-toggles ${activityRanksIsOpen ? "panel-open" : "panel-closed"}`} onClick={toggleActivitiesPanel}>
-                    <img className="toggle-icons" src="src/assets/extracurricular.png"></img>
+                    <img className="toggle-icons" src="./assets/extracurricular.png"></img>
                     Activities
                 </div>
                 <ActivitiesPanel setActivityRanksIsOpen={setActivityRanksIsOpen} activityRanksIsOpen={activityRanksIsOpen} handleListUpdate={setActivityRanks}/>
 
                 <div className={`panel-toggles ${budgetPanelIsOpen ? "panel-open" : "panel-closed"}`} onClick={toggleBudgetPanel}>
-                    <img className="toggle-icons" src="src/assets/money.png"></img>
+                    <img className="toggle-icons" src="./assets/money.png"></img>
                     Budget
                 </div>
                 <BudgetPanel setBudgetPanelIsOpen={setBudgetPanelIsOpen} budgetPanelIsOpen={budgetPanelIsOpen} setMaxBudget={setMaxBudget} setMinBudget={setMinBudget}/>
 
                 <div className={`panel-toggles ${datePanelIsOpen ? "panel-open" : "panel-closed"}`} onClick={toggleDatePanel}>
-                    <img className="toggle-icons" src="src/assets/calendar.png"></img>
+                    <img className="toggle-icons" src="./assets/calendar.png"></img>
                     Date
                 </div>
                 <MultiDatePicker setDatePanelIsOpen={setDatePanelIsOpen} datePanelIsOpen={datePanelIsOpen} setSelectedDates={setSelectedDates} selectedDates={selectedDates} />
 
                 <div className={`panel-toggles ${timePanelIsOpen ? "panel-open" : "panel-closed"}`} onClick={toggleTimePanel}>
-                    <img className="toggle-icons" src="src/assets/clock.png"></img>
+                    <img className="toggle-icons" src="./assets/clock.png"></img>
                     Time
                 </div>
                 <TimePanel timePanelIsOpen={timePanelIsOpen} toggleTimePanel={toggleTimePanel} setDuration={setDuration} setTime={setTime} time={time}/>

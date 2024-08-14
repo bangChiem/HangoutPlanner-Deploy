@@ -20,7 +20,7 @@ function MultiDatePicker( {setDatePanelIsOpen, datePanelIsOpen, setSelectedDates
 
   return (
     <div className={`${datePanelIsOpen ? 'panel calendar-open' : 'panel'}`}>
-      <img className="close-icon" src="src/assets/close.png" height={25} onClick={toggleDatePanel}></img>
+      <img className="close-icon" src="./assets/close.png" height={25} onClick={toggleDatePanel}></img>
       <div className='calendar-panel-container '>
         <DayPicker
           mode="multiple"

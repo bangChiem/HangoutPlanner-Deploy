@@ -36,7 +36,7 @@ function App() {
             </div>
             <div className="col-sm-6">
               <div onClick={() => setResultsIsOpen(true)} className="tool-button">
-                <img src="src/assets/FindRes.png"></img>Find Hangout
+                <img src="./assets/FindRes.png"></img>Find Hangout
               </div>
             </div>
           </div>
@@ -44,8 +44,8 @@ function App() {
       </div>
 
       <div className={`instructions-panel ${showInstructions ? '' : 'hide'}`}>
-        <img className="mobile" width={328} src="src/assets/startInstructions.png" alt="instructions"></img>
-        <img className="desktop" width={800} src="src/assets/desktopStartInstruction.png" alt="instructions"></img>
+        <img className="mobile" width={328} src="./assets/startInstructions.png" alt="instructions"></img>
+        <img className="desktop" width={800} src="./assets/desktopStartInstruction.png" alt="instructions"></img>
       </div>
 
 
