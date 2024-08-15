@@ -5,9 +5,9 @@ import MultiDatePicker from "./MultiDatePicker";
 import TimePanel from "./TimePanel";
 import './MainPanel.css'
 import submitIcon1 from "./assets/Submitted.png"
-import sumbmitIcon2 from "./assets/Submitted2.png"
-import sumbmitIcon3 from "./assets/Submitted3.png"
-import sumbmitIcon4 from "./assets/Submitted4.png"
+import submitIcon2 from "./assets/Submitted2.png"
+import submitIcon3 from "./assets/Submitted3.png"
+import submitIcon4 from "./assets/Submitted4.png"
 import submitIcon5 from "./assets/Submitted5.png"
 import submitIcon6 from "./assets/Submitted6.png"
 import submitIcon7 from "./assets/Submitted7.png"
@@ -31,7 +31,7 @@ function MainPanel( {index, setPanelData} ){
     const [datePanelIsOpen, setDatePanelIsOpen] = useState(false)
     const [timePanelIsOpen, setTimePanelIsOpen] = useState(false)
     const [isSubmitted, setIsSubmitted] = useState(false)
-    const [submitImg, setSubmitImg] = useState('')
+    let submitImg
 
     function handleSubmit(){
         setIsSubmitted(true)
@@ -106,28 +106,28 @@ function MainPanel( {index, setPanelData} ){
     function handleSubmitImg(){
         const val = Math.floor(Math.random() * 8);
         if (val === 0){
-            setSubmitImg({submitIcon1})
+            submitImg = submitIcon1
         }
         else if (val === 1){
-            setSubmitImg({sumbmitIcon2})
+            submitImg = submitIcon2
         }
         else if (val === 2){
-            setSubmitImg({sumbmitIcon3})
+            submitImg = submitIcon3
         }
         else if (val === 3){
-            setSubmitImg({sumbmitIcon4})
+            submitImg = submitIcon4
         }
         else if (val === 4){
-            setSubmitImg({submitIcon5})
+            submitImg = submitIcon5
         }
         else if (val === 5){
-            setSubmitImg({submitIcon6})
+            submitImg = submitIcon6
         }
         else if (val === 6){
-            setSubmitImg({submitIcon7})
+            submitImg = submitIcon7
         }
         else if (val === 7){
-            setSubmitImg({submitIcon8})
+            submitImg = submitIcon8
         }
       }
 
