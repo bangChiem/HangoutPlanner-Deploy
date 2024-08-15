@@ -3,6 +3,7 @@ import HangoutResults from "./HangoutResults";
 import './App.css'
 import 'react-day-picker/dist/style.css';
 import React, { useState } from "react";
+import findResIcon from "./assets/FindRes.png" 
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
           <div className="toolbar row mx-auto">
             <div className="col-sm-6">
               <div onClick={handleNewPanel} className="tool-button">
-                  <img src="./assets/plus.png"></img>Add Panel
+                  <img src={findResIcon}></img>Add Panel
                 </div>
             </div>
             <div className="col-sm-6">
