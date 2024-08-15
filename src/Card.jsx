@@ -1,5 +1,6 @@
 import './Card.css'
 import './MainPanel.css'
+import dragIcon from './assets/drag.png'
 
 function Card( {index, val, setActiveCard} ){
 
@@ -36,7 +37,7 @@ function Card( {index, val, setActiveCard} ){
             onDragStart={() => setActiveCard(index)} 
             onDragEnd={() => setActiveCard()}
         >
-                <img src='./assets/drag.png' width={40}></img>
+                <img src={dragIcon} width={40}></img>
                 <p className={`activity ${setColor(index)}`} >{val}</p>
         </article>
     )

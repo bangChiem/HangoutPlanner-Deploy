@@ -4,6 +4,18 @@ import React, {useState} from 'react'
 import MultiDatePicker from "./MultiDatePicker";
 import TimePanel from "./TimePanel";
 import './MainPanel.css'
+import submitIcon1 from "./assets/Submitted.png"
+import sumbmitIcon2 from "./assets/Submitted2.png"
+import sumbmitIcon3 from "./assets/Submitted3.png"
+import sumbmitIcon4 from "./assets/Submitted4.png"
+import submitIcon5 from "./assets/Submitted5.png"
+import submitIcon6 from "./assets/Submitted6.png"
+import submitIcon7 from "./assets/Submitted7.png"
+import submitIcon8 from "./assets/Submitted8.png"
+import extracurricularToggleIcon from "./assets/extracurricular.png"
+import moneyToggleIcon from "./assets/money.png"
+import calendarToggleIcon from "./assets/calendar.png"
+import clockToggleIcon from "./assets/clock.png"
 
 function MainPanel( {index, setPanelData} ){
 
@@ -94,28 +106,28 @@ function MainPanel( {index, setPanelData} ){
     function handleSubmitImg(){
         const val = Math.floor(Math.random() * 8);
         if (val === 0){
-            setSubmitImg('src/assets/Submitted.png')
+            setSubmitImg({submitIcon1})
         }
         else if (val === 1){
-            setSubmitImg("src/assets/Submitted2.png")
+            setSubmitImg({sumbmitIcon2})
         }
         else if (val === 2){
-            setSubmitImg("src/assets/Submitted3.png")
+            setSubmitImg({sumbmitIcon3})
         }
         else if (val === 3){
-            setSubmitImg("src/assets/Submitted4.png")
+            setSubmitImg({sumbmitIcon4})
         }
         else if (val === 4){
-            setSubmitImg("src/assets/Submitted5.png")
+            setSubmitImg({submitIcon5})
         }
         else if (val === 5){
-            setSubmitImg("src/assets/Submitted6.png")
+            setSubmitImg({submitIcon6})
         }
         else if (val === 6){
-            setSubmitImg("src/assets/Submitted7.png")
+            setSubmitImg({submitIcon7})
         }
         else if (val === 7){
-            setSubmitImg("src/assets/Submitted8.png")
+            setSubmitImg({submitIcon8})
         }
       }
 
@@ -134,25 +146,25 @@ function MainPanel( {index, setPanelData} ){
                 </form>
 
                 <div className={`panel-toggles ${activityRanksIsOpen ? "panel-open" : "panel-closed"}`} onClick={toggleActivitiesPanel}>
-                    <img className="toggle-icons" src="./assets/extracurricular.png"></img>
+                    <img className="toggle-icons" src={extracurricularToggleIcon}></img>
                     Activities
                 </div>
                 <ActivitiesPanel setActivityRanksIsOpen={setActivityRanksIsOpen} activityRanksIsOpen={activityRanksIsOpen} handleListUpdate={setActivityRanks}/>
 
                 <div className={`panel-toggles ${budgetPanelIsOpen ? "panel-open" : "panel-closed"}`} onClick={toggleBudgetPanel}>
-                    <img className="toggle-icons" src="./assets/money.png"></img>
+                    <img className="toggle-icons" src={moneyToggleIcon}></img>
                     Budget
                 </div>
                 <BudgetPanel setBudgetPanelIsOpen={setBudgetPanelIsOpen} budgetPanelIsOpen={budgetPanelIsOpen} setMaxBudget={setMaxBudget} setMinBudget={setMinBudget}/>
 
                 <div className={`panel-toggles ${datePanelIsOpen ? "panel-open" : "panel-closed"}`} onClick={toggleDatePanel}>
-                    <img className="toggle-icons" src="./assets/calendar.png"></img>
+                    <img className="toggle-icons" src={calendarToggleIcon}></img>
                     Date
                 </div>
                 <MultiDatePicker setDatePanelIsOpen={setDatePanelIsOpen} datePanelIsOpen={datePanelIsOpen} setSelectedDates={setSelectedDates} selectedDates={selectedDates} />
 
                 <div className={`panel-toggles ${timePanelIsOpen ? "panel-open" : "panel-closed"}`} onClick={toggleTimePanel}>
-                    <img className="toggle-icons" src="./assets/clock.png"></img>
+                    <img className="toggle-icons" src={clockToggleIcon}></img>
                     Time
                 </div>
                 <TimePanel timePanelIsOpen={timePanelIsOpen} toggleTimePanel={toggleTimePanel} setDuration={setDuration} setTime={setTime} time={time}/>

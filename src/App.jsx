@@ -3,7 +3,10 @@ import HangoutResults from "./HangoutResults";
 import './App.css'
 import 'react-day-picker/dist/style.css';
 import React, { useState } from "react";
-import findResIcon from "./assets/FindRes.png" 
+import findResIcon from "./assets/FindRes.png"
+import addPanelIcon from "./assets/plus.png"
+import mobileInstructionsImg from "./assets/startInstructions.png"
+import desktopInstructionsImg from "./assets/desktopStartInstruction.png"
 
 function App() {
 
@@ -32,12 +35,12 @@ function App() {
           <div className="toolbar row mx-auto">
             <div className="col-sm-6">
               <div onClick={handleNewPanel} className="tool-button">
-                  <img src={findResIcon}></img>Add Panel
+                  <img src={addPanelIcon}></img>Add Panel
                 </div>
             </div>
             <div className="col-sm-6">
               <div onClick={() => setResultsIsOpen(true)} className="tool-button">
-                <img src="./assets/FindRes.png"></img>Find Hangout
+                <img src={findResIcon}></img>Find Hangout
               </div>
             </div>
           </div>
@@ -45,8 +48,8 @@ function App() {
       </div>
 
       <div className={`instructions-panel ${showInstructions ? '' : 'hide'}`}>
-        <img className="mobile" width={328} src="./assets/startInstructions.png" alt="instructions"></img>
-        <img className="desktop" width={800} src="./assets/desktopStartInstruction.png" alt="instructions"></img>
+        <img className="mobile" width={328} src={mobileInstructionsImg} alt="instructions"></img>
+        <img className="desktop" width={800} src={desktopInstructionsImg} alt="instructions"></img>
       </div>
 
 

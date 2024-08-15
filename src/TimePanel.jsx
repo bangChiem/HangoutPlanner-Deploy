@@ -1,5 +1,6 @@
 import Select from 'react-select';
 import "./TimePanel.css"
+import closeIcon from "./assets/close.png"
 
 const options = [
     { value: 'morning', label: 'Morning' },
@@ -25,7 +26,7 @@ function TimePanel( {timePanelIsOpen, toggleTimePanel, setDuration, setTime, tim
 
     return(
         <div className={`${timePanelIsOpen ? 'panel time-open' : 'panel'}`}>
-            <img className="close-icon" src="./assets/close.png" height={25} onClick={toggleTimePanel}></img>
+            <img className="close-icon" src={closeIcon} height={25} onClick={toggleTimePanel}></img>
 
             <div className='time-label'>How Long?</div>
             <form>
