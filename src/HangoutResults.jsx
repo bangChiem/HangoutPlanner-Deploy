@@ -11,7 +11,7 @@ function HangoutResults( {enoughData, data, open, onClose} ){
     const [displayMaxBudget, setDisplayMaxBudget] = useState()
     const [displayDates, setDisplayDates] = useState([])
     const [displayDuration, setDisplayDuration] = useState()
-    const [displayTime, setDisplayTime] = useState()
+    const [displayTime, setDisplayTime] = useState([])
 
     const dataLength = data.length
 
@@ -87,7 +87,6 @@ function HangoutResults( {enoughData, data, open, onClose} ){
             }
           }
         }
-    
         setDisplayActivities(sharedActivities)
         setDisplayDates(sharedDates)
         if (sharedDates == []){
@@ -174,7 +173,10 @@ function HangoutResults( {enoughData, data, open, onClose} ){
                       <div className="panel-result-header times-result-header">Time</div>
                       <div className="panel-result-container time-result-panel">
                       <h4><span>Everybody</span> is availible in the</h4>
-                        {displayTime} for {displayDuration} hours
+                        <ul>
+                          {displayTime.map((time,index) => <li key={index}>{time}</li>)}
+                        </ul>
+                         for {displayDuration} hours
                       </div>
                     </div>
                   </div>

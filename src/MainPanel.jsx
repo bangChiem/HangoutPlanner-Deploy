@@ -31,7 +31,8 @@ function MainPanel( {index, setPanelData} ){
     const [datePanelIsOpen, setDatePanelIsOpen] = useState(false)
     const [timePanelIsOpen, setTimePanelIsOpen] = useState(false)
     const [isSubmitted, setIsSubmitted] = useState(false)
-    let submitImg
+    const [submitImg, setSubmitImg] = useState("")
+
 
     function handleSubmit(){
         setIsSubmitted(true)
@@ -106,28 +107,28 @@ function MainPanel( {index, setPanelData} ){
     function handleSubmitImg(){
         const val = Math.floor(Math.random() * 8);
         if (val === 0){
-            submitImg = submitIcon1
+            setSubmitImg(submitIcon1)
         }
         else if (val === 1){
-            submitImg = submitIcon2
+            setSubmitImg(submitIcon2)
         }
         else if (val === 2){
-            submitImg = submitIcon3
+            setSubmitImg(submitIcon3)
         }
         else if (val === 3){
-            submitImg = submitIcon4
+            setSubmitImg(submitIcon4)
         }
         else if (val === 4){
-            submitImg = submitIcon5
+            setSubmitImg(submitIcon5)
         }
         else if (val === 5){
-            submitImg = submitIcon6
+            setSubmitImg(submitIcon6)
         }
         else if (val === 6){
-            submitImg = submitIcon7
+            setSubmitImg(submitIcon7)
         }
         else if (val === 7){
-            submitImg = submitIcon8
+            setSubmitImg(submitIcon8)
         }
       }
 
