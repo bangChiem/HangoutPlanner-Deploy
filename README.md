@@ -2,4 +2,4 @@ Welcome to my side project on practicing React web dev. This app can be used to 
 
 If you want to see the development process of the app please find my other repository HangoutPlanner-dev
 
-I user React + Vite for setup
+I used React + Vite for setup
