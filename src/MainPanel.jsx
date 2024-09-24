@@ -146,11 +146,11 @@ function MainPanel( {index, setPanelData} ){
                     <input className='input-name' placeholder="Enter Name"></input>
                 </form>
 
-                <div className={`panel-toggles ${activityRanksIsOpen ? "panel-open" : "panel-closed"}`} onClick={toggleActivitiesPanel}>
+                {/* <div className={`panel-toggles ${activityRanksIsOpen ? "panel-open" : "panel-closed"}`} onClick={toggleActivitiesPanel}>
                     <img className="toggle-icons" src={extracurricularToggleIcon}></img>
                     Activities
                 </div>
-                <ActivitiesPanel setActivityRanksIsOpen={setActivityRanksIsOpen} activityRanksIsOpen={activityRanksIsOpen} handleListUpdate={setActivityRanks}/>
+                <ActivitiesPanel setActivityRanksIsOpen={setActivityRanksIsOpen} activityRanksIsOpen={activityRanksIsOpen} handleListUpdate={setActivityRanks}/> */}
 
                 <div className={`panel-toggles ${budgetPanelIsOpen ? "panel-open" : "panel-closed"}`} onClick={toggleBudgetPanel}>
                     <img className="toggle-icons" src={moneyToggleIcon}></img>

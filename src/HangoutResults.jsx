@@ -134,18 +134,15 @@ function HangoutResults( {enoughData, data, open, onClose} ){
           <div className="exit-button-container">
               <img onClick={onClose} src={closeIcon} className="exit-button"></img>
             </div>
-              <div className="results-header-title-container valid-data">
-                <h1>Best</h1>
-                <h2>Hangout</h2>
-              </div>
 
-                <div className="container-fluid">
+
+                <div className="container-fluid results-wrapper">
 
                   <div className="row">
                     <div className="col-sm-6">
                       <div className="panel-result-header activities-result-header">Activities</div>
                       <div className="panel-result-container activities-result-panel">
-                      <h4><span>Everyone</span> wants to: </h4>
+                      <h4>Suggested Activities </h4>
                         <ul>
                           {displayActivities.map((activity,index) => <li key={index}>{activity}</li>)}
                         </ul>
@@ -176,7 +173,7 @@ function HangoutResults( {enoughData, data, open, onClose} ){
                         <ul>
                           {displayTime.map((time,index) => <li key={index}>{time}</li>)}
                         </ul>
-                         for {displayDuration} hours
+                         <span> for {displayDuration} hour{displayDuration === 1 ? "" : "s"}</span>
                       </div>
                     </div>
                   </div>
