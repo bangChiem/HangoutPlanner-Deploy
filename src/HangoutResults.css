@@ -114,6 +114,10 @@
     text-align: center;
 }
 
+.list-text-container{
+    overflow-y: auto;
+}
+
 .activities-result-header{
     background-color: #FFBF19;
     border-top: 1vh solid #FF8A00;

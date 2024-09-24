@@ -143,9 +143,11 @@ function HangoutResults( {enoughData, data, open, onClose} ){
                       <div className="panel-result-header activities-result-header">Activities</div>
                       <div className="panel-result-container activities-result-panel">
                       <h4>Suggested Activities </h4>
-                        <ul>
-                          {displayActivities.map((activity,index) => <li key={index}>{activity}</li>)}
-                        </ul>
+                      <div className="list-text-container">
+                          <ul>
+                            {displayActivities.map((activity,index) => <li key={index}>{activity}</li>)}
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="col-sm-6">
@@ -161,18 +163,22 @@ function HangoutResults( {enoughData, data, open, onClose} ){
                     <div className="panel-result-header dates-result-header">Activities</div>
                       <div className="panel-result-container dates-result-panel">
                         <h4><span>Everyone</span> is free on: </h4>
+                        <div className="list-text-container">
                         <ul>
                           {displayDates.map((date,index) => <li key={index}>{date}</li>)}
                         </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="col-sm-6">
                       <div className="panel-result-header times-result-header">Time</div>
                       <div className="panel-result-container time-result-panel">
                       <h4><span>Everybody</span> is availible in the</h4>
+                      <div className="list-text-container">
                         <ul>
                           {displayTime.map((time,index) => <li key={index}>{time}</li>)}
                         </ul>
+                      </div>
                          <span> for {displayDuration} hour{displayDuration === 1 ? "" : "s"}</span>
                       </div>
                     </div>
